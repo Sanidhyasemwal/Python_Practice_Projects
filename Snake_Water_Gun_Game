@@ -1,0 +1,31 @@
+import random
+
+computer = random.choice([1, 0, -1])
+print(computer)
+
+youstr=input("Enter you'r choice : ")
+
+dictionary={"s":1, "w":-1, "g":0}
+reversedictionary={1:"Snake",-1:"Water",0:"Gun"}
+
+you=dictionary[youstr]
+
+print(f"you'r choice {reversedictionary[you]}\n computer's choise {reversedictionary[computer]} ")
+
+if you==computer:
+    print("it's a draw")
+else:
+    if you==1 and computer==-1:
+        print("you win")
+    elif you==1 and computer==0:
+        print("you loose")
+    elif you==-1 and computer==1:
+        print("you loose")
+    elif you==-1 and computer==0:
+        print("you win")
+    elif you==0 and computer==1:
+        print("you win")
+    elif you==0 and computer==-1:
+        print("you loose")
+    else:
+        print("something went wrong")
