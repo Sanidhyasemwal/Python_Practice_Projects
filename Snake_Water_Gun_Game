@@ -1,3 +1,7 @@
+"""This is my first python project inspired by code with harry ,
+rules: gun will beat snake , snake will beat water and water beat gun just like stone paper scissore, 
+you can try it and make stone paper and scissore version of this game try this game and try to make it """
+#Code starts from here
 import random
 
 computer = random.choice([1, 0, -1])
@@ -29,3 +33,6 @@ else:
         print("you loose")
     else:
         print("something went wrong")
+
+#code end here
+#Thank You 
